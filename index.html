@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker - SpendWise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section with Logo -->
+    <header>
+        <div class="logo-container">
+            <img src="https://via.placeholder.com/50" alt="SpendWise Logo" width="50">
+            <h1>SpendWise Budget Tracker</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- Interactive Help Section -->
+        <section class="help-section">
+            <details>
+                <summary>How to use this tracker</summary>
+                <p>This budget tracker helps you monitor your daily expenses. Use the form below to enter your expense details, and review your previous logs in the table.</p>
+            </details>
+        </section>
+
+        <!-- Add Expense Form Section -->
+        <section class="add-expense-section">
+            <h2>Add New Expense</h2>
+            <form>
+                <label for="expense-name">Expense Name:</label>
+                <input type="text" id="expense-name" name="expense-name" placeholder="e.g., Groceries">
+
+                <label for="expense-amount">Amount ($):</label>
+                <input type="number" id="expense-amount" name="expense-amount" placeholder="0.00">
+
+                <label for="expense-category">Category:</label>
+                <select id="expense-category" name="expense-category">
+                    <option value="food">Food</option>
+                    <option value="transport">Transport</option>
+                    <option value="rent">Rent</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="expense-date">Date:</label>
+                <input type="date" id="expense-date" name="expense-date">
+
+                <button type="button">Add Expense</button>
+            </form>
+        </section>
+
+        <!-- Expenses Table Section -->
+        <section class="expenses-section">
+            <h2>Expense History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Amount</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Groceries</td>
+                        <td>$45.50</td>
+                        <td>Food</td>
+                        <td>2026-10-01</td>
+                    </tr>
+                    <tr>
+                        <td>Bus Fare</td>
+                        <td>$3.00</td>
+                        <td>Transport</td>
+                        <td>2026-10-02</td>
+                    </tr>
+                    <tr>
+                        <td>Apartment Rent</td>
+                        <td>$850.00</td>
+                        <td>Rent</td>
+                        <td>2026-10-03</td>
+                    </tr>
+                    <tr>
+                        <td>Movie Night</td>
+                        <td>$15.00</td>
+                        <td>Entertainment</td>
+                        <td>2026-10-04</td>
+                    </tr>
+                    <tr>
+                        <td>Coffee</td>
+                        <td>$4.50</td>
+                        <td>Other</td>
+                        <td>2026-10-05</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Multimedia Video Section -->
+        <section class="video-section">
+            <h2>Budgeting Tips</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Budgeting Tips Video" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SpendWise</p>
+    </body>
+</html>
